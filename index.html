@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Transporte </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+        header {
+            background: #23272a;
+            color: #fff;
+            padding: 30px 0 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #2c2f33;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #43b581;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #23272a;
+            border-bottom: 2px solid #43b581;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .btn-agendamento {
+            display: inline-block;
+            background: #43b581;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-right: 10px;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(67,181,129,0.10);
+        }
+        .btn-agendamento:hover {
+            background: #2ecc71;
+            box-shadow: 0 4px 15px rgba(67,181,129,0.18);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            background: #25d366;
+            color: #fff;
+            padding: 12px 22px 12px 18px;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-size: 1.15em;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .whatsapp-float:hover {
+            background: #128c7e;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.20);
+        }
+        .whatsapp-float .whatsapp-icon {
+            margin-right: 10px;
+        }
+        footer {
+            background: #23272a;
+            color: #fff;
+            text-align: center;
+            padding: 28px 10px 18px 10px;
+            margin-top: 50px;
+            border-top: 3px solid #43b581;
+            font-size: 1.07em;
+            letter-spacing: 0.01em;
+        }
+        .footer-brand {
+            font-weight: bold;
+            font-size: 1.08em;
+            color: #43b581;
+            letter-spacing: 0.06em;
+            text-shadow: 0 1px 8px #2228;
+        }
+        .footer-details {
+            margin-top: 8px;
+            font-size: 0.99em;
+            color: #d8d8d8;
+        }
+        .footer-icons {
+            margin-top: 15px;
+        }
+        .footer-icons img {
+            width: 28px;
+            height: 28px;
+            margin: 0 7px;
+            vertical-align: middle;
+            opacity: 0.86;
+            transition: opacity 0.18s;
+        }
+        .footer-icons img:hover {
+            opacity: 1;
+        }
+        .agendamento-box {
+            background: linear-gradient(107deg, #f5f7fa 60%, #d4f3e2 100%);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(67,181,129,0.09), 0 1.5px 8px rgba(67,181,129,0.10);
+            padding: 40px 35px 35px 35px;
+            margin: 0 auto 15px auto;
+            max-width: 700px;
+            transition: box-shadow 0.2s;
+        }
+        .agendamento-box:hover {
+            box-shadow: 0 8px 32px rgba(67,181,129,0.16), 0 2.5px 14px rgba(67,181,129,0.14);
+        }
+        .agendamento-title {
+            font-size: 1.32em;
+            font-weight: 700;
+            color: #23272a;
+            margin-bottom: 12px;
+            letter-spacing: 0.01em;
+        }
+        .agendamento-subtitle {
+            font-size: 1em;
+            color: #535353;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 800px) {
+            .agendamento-box {
+                max-width: 100%;
+                padding: 15px 2px 15px 2px;
+            }
+        }
+        @media (max-width: 600px) {
+            .whatsapp-float {
+                font-size: 1em;
+                padding: 10px 15px 10px 14px;
+                bottom: 15px;
+                right: 15px;
+            }
+            footer {
+                font-size: 0.98em;
+                padding: 18px 5px 12px 5px;
+            }
+            .footer-brand {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Samuel Transporte</h1>
+        <p>Transporte acessível e prático para empresas, escritórios e entregas do dia a dia.</p>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a href="#agendamento">Agendamento</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>
+            Bem-vindo ao <strong>Samuel Transporte </strong>! Aqui você encontra transporte no carro popular, voltado para empresas, escritórios e entregas do dia a dia. Atendo pessoas, pequenos negócios e profissionais que precisam de praticidade, economia e confiança para transportar encomendas, funcionários ou fazer entregas rápidas em toda a cidade. Serviço direto, sem frescura, para facilitar sua rotina e ajudar sua empresa a funcionar melhor.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Transporte para empresas e escritórios</li>
+            <li>Levo funcionários para reuniões, compromissos e deslocamentos dentro da cidade</li>
+            <li>Entregas de documentos e pequenas encomendas para empresas</li>
+            <li>Corridas rápidas para o dia a dia (inclusive por aplicativos como Uber e 99)</li>
+            <li>Serviço de leva e traz para lojas, cartórios, bancos e outros locais</li>
+            <li>Disponibilidade para transporte de pequenas cargas ou entregas urgentes</li>
+            <li>Ideal para quem quer economizar e não precisa de luxo, só de um serviço que funcione</li>
+        </ul>
+        <p>
+            Trabalho com carro popular, revisado, sempre pronto para o serviço. Atendimento de segunda a sábado, com horários flexíveis e preço justo!
+        </p>
+        <a href="#agendamento" class="btn-agendamento">Agende Agora</a>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>
+            Tem dúvida ou quer saber mais? Fale comigo no WhatsApp:
+        </p>
+        <ul>
+            <li><b>WhatsApp:</b> <a href="https://wa.me/5515996194599" target="_blank">Clique aqui para conversar</a></li>
+        </ul>
+    </section>
+
+    <section id="agendamento">
+        <div class="agendamento-box">
+            <div class="agendamento-title">Peça seu transporte ou entrega</div>
+            <div class="agendamento-subtitle">
+                Simples, rápido e sem burocracia. Preencha o formulário e eu retorno logo!
+            </div>
+            <!-- Google Forms incorporado -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchbJJQajMzENhuEdgZyXwhv_Uz3_jVjWxCdCel9uS4eS7Ycw/viewform?embedded=true" width="640" height="1713" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5515996194599" target="_blank" class="whatsapp-float" aria-label="Chame no WhatsApp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+             alt="WhatsApp" width="28" height="28" class="whatsapp-icon">
+        Chame no WhatsApp
+    </a>
+
+    <footer>
+        <div class="footer-brand">Samuel Transporte</div>
+        <div class="footer-details">
+            Transporte popular e acessível para empresas, escritórios e entregas. Serviço direto e confiável.<br>
+            Todos os direitos reservados &copy; <span id="ano"></span>
+        </div>
+        <div class="footer-icons">
+            <a href="https://wa.me/5515996194599" target="_blank" aria-label="WhatsApp"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
