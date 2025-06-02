@@ -1,0 +1,11 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Transporte 2025 - Soluções logísticas modernas e eficientes. Agilidade, economia e inovação no transporte de cargas." />
+<meta name="keywords" content="Logística, Transporte, Soluções logísticas, Entregas, Roteirização, Centro de distribuição" />
+<meta name="author" content="Samuel Sorrechia" />
+<meta property="og:title" content="Transporte 2025" />
+<meta property="og:description" content="Soluções logísticas modernas para empresas que buscam eficiência e agilidade." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tranporte2025.github.io/br/" />
+<meta property="og:image" content="URL da imagem de capa (se houver)" />
+<title>Transporte 2025 | Soluções Logísticas Inteligentes</title>
